@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwincd CSS Installation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="bg-white text-black px-4 sm:px-12 py-5">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="#" class="text-xl font-bold">Wizardshot</a>
+            <button id="hamburger" class="md:hidden block">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <div class="hidden md:flex flex-1 justify-center space-x-4">
+                <a href="#home" class="hover:text-gray-400">Home</a>
+                <a href="#features" class="hover:text-gray-400">Features</a>
+                <a href="#about" class="hover:text-gray-400">About</a>
+                <a href="#help" class="hover:text-gray-400">Help Center & Community</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-3">
+                <div class="text-gray hover:text-gray-400">Login</div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="text-sm mb-0">100% free, forever 🤑</div>
+                    <a href="#" class="py-1 px-2 bg-black text-white rounded mt-0">Install Wizardshot</a>
+                </div>
+            </div>
+    
+            
+            <div id="menu" class="md:hidden hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white w-full">
+                <a href="#home" class="block">Home</a>
+                <a href="#features" class="block">Features</a>
+                <a href="#about" class="block">About</a>
+                <a href="#help" class="block">Help Center & Community</a>
+                <div class="border-t border-gray-300 w-full my-2"></div>
+                <div class="text-gray hover:text-gray-400">Login</div>
+                <a href="#" class="py-1 px-2 bg-black text-white rounded">Install Wizardshot</a>
+                <div class="text-sm">100% free, forever 🤑</div>
+                <button id="closeMenu" class="absolute top-0 right-0 mt-5 mr-5">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home-page" id="home">
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="text-center mb-1 px-2">Your Magic Wand for <br> Instant Documentation</h1>
+            <p class="text-center mb-4 text-xs">TURN ANY PROCESS INTO A SIMPLE STEP BY STEP GUIDE</p>
+            <a href="#" class="px-4 py-1 bg-black text-white rounded">Install Wizardshot &#8594; </a>
+        </div>        
+    </div>
+
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    
+        document.getElementById('closeMenu').addEventListener('click', function() {
+            document.getElementById('menu').classList.add('hidden');
+        });
+    </script>
+    
+</body>
+</html>
