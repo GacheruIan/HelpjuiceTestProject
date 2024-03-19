@@ -1,4 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+h1{
+    font-size:revert;
+    font-weight: 800;
+}
 
