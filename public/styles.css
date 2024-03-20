@@ -578,6 +578,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -602,6 +606,18 @@ video {
   top: 0px;
 }
 
+.top-full {
+  top: 100%;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -615,10 +631,6 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
 }
 
 .mb-1 {
@@ -645,32 +657,28 @@ video {
   margin-bottom: 2rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
-.mt-0 {
-  margin-top: 0px;
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
 }
 
 .block {
@@ -695,6 +703,10 @@ video {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-\[2px\] {
@@ -933,11 +945,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -956,6 +963,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-left {
@@ -1047,6 +1058,17 @@ h2{
   margin-top:10%;
 }
 
+#home {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+#tutorial-image {
+  padding-top: 4%;
+  display: inline-block;
+  border-radius: 2%;
+}
+
 .about-center-container{
   border: 4px solid;
   margin-top: -3%;
@@ -1082,6 +1104,22 @@ h2{
 
 .aboutus-page {
   width: 70%;
+}
+
+/* Ensure the navbar container is relatively positioned */
+
+nav > div.container {
+  position: relative;
+  /* This helps in positioning the absolute elements inside it correctly */
+}
+
+#menu {
+  /* Other styles remain the same */
+  top: 100%;
+  /* This ensures it starts right below the navbar */
+  left: 0;
+  right: 0;
+  /* Remove any top margin or padding that might push it down */
 }
 
 .hover\:text-gray-400:hover {
