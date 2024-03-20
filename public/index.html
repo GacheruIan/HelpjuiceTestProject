@@ -82,7 +82,8 @@
 
                 <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
-                        <img src="https://i.ibb.co/1vjzVyr/img-card1.png" alt="Image description" class="w-full" style="height: 200px;width: 400px;">
+                        <img src="https://i.ibb.co/1vjzVyr/img-card1.png" alt="Image description" class="w-full"
+                            style="height: 200px;width: 400px;">
                         <div class="p-5 flex-1 flex flex-col">
                             <h2 class="text-xl font-semibold mb-2">1. Click Capture</h2>
                             <p class="text-gray-700 flex-1">Once you install the Chrome extension, fire it up, and click
@@ -91,8 +92,9 @@
                     </div>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full" >
-                        <img src="https://i.ibb.co/nL6dd5j/img-card2.jpg" alt="Image description" class="w-full"style="height: 195px;width: 400px;">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+                        <img src="https://i.ibb.co/nL6dd5j/img-card2.jpg" alt="Image description" class="w-full"
+                            style="height: 195px;width: 400px;">
                         <div class="p-5 flex-1 flex flex-col">
                             <h2 class="text-xl font-semibold mb-2">2. Perform Your Actions</h2>
                             <p class="text-gray-700 flex-1">Once capturing, Wizardshot carefully monitors what you do to
@@ -138,12 +140,14 @@
             <p class="text-xs md:text-sm">Editor&<br>Integrations</p>
         </div>
     </div>
-    <div class="about-center-container mx-auto text-center border-2 border-black rounded-lg p-4 max-w-xl md:max-w-2xl">
+    <div class="about-center-container mx-auto text-center border-2 border-black rounded-lg p-4 max-w-xl md:max-w-2xl mb-20">
         <div class="about-center-container-h1 mb-4">
-            <h1 id="about-center-h1" class="text-base md:text-lg lg:text-xl mb-4">Create A Detailed Tutorial <br> in Less than 3 clicks</h1>
+            <h1 id="about-center-h1" class="text-base md:text-lg lg:text-xl mb-4">Create A Detailed Tutorial <br> in
+                Less than 3 clicks</h1>
         </div>
         <div class="about-center-container-btn mb-4">
-            <a href="#" class="px-4 py-2 md:px-6 md:py-3 lg:px-10 lg:py-6 bg-black text-white rounded fa fa-chrome"> Install Wizardshot &#8594;</a>
+            <a href="#" class="px-4 py-2 md:px-6 md:py-3 lg:px-10 lg:py-6 bg-black text-white rounded fa fa-chrome">
+                Install Wizardshot &#8594;</a>
         </div>
         <div class="about-center-container-text mb-4">
             <p class="text-sm md:text-md lg:text-lg font-bold">“Has helped us write help docs 100x faster"</p>
@@ -157,8 +161,47 @@
             <i class="fas fa-star" style="color: gold;"></i>
         </div>
     </div>
-    
-    
+    <!-- end of about-page -->
+
+    <!-- start of help-page -->
+    <div class="help-center-section" id="help">
+        <div class="help-center-heading text-center mb-10">
+            <h1 id="help-center-heading1">Common Questions</h1>
+        </div>
+        <div class="help-center-questions mx-auto w-full max-w-2xl">
+            <div class="help-center-question" data-question="1">
+                <p class="help-center-qn-over cursor-pointer"><b>What is Wizardshot?</b> <span
+                        class="dropdown-arrow">&#8964;</span></p>
+                <p class="help-center-answer">Wizardshot is a web app & chrome extension that allows you to create
+                    step-by-step tutorials simply by capturing your screen. <hr> </p>
+            </div>
+            <div class="help-center-question" data-question="2">
+                <p class="help-center-qn-over cursor-pointer"><b>How is Wizardshot Free?</b> <span
+                        class="dropdown-arrow">&#8964;</span></p>
+                <p class="help-center-answer">The costs to run a service are really inexpensive as most of the processing
+                    happens in the Chrome extension. <br> Really - all that we have to pay for is <u>super-secure
+                        hosting</u>, <u>awesome 24/7 support</u> and that’s it. <br> <b>We built Wizardshot as a
+                        stand-alone product with a deep <u>Helpjuice Knowledge Base</u> integration.</b><hr></p>
+            </div>
+            <div class="help-center-question" data-question="3">
+                <p class="help-center-qn-over cursor-pointer"><b>Is my data secure?</b> <span
+                        class="dropdown-arrow">&#8964;</span></p>
+                <p class="answer hidden">The costs to run a service are really inexpensive as most of the processing
+                    happens in the Chrome extension. <br> Really - all that we have to pay for is <u>super-secure
+                        hosting</u>, <u>awesome 24/7 support</u> and that’s it. <br> <b>We built Wizardshot as a
+                        stand-alone product with a deep <u>Helpjuice Knowledge Base</u> integration.</b></p>
+            </div>
+
+            <div class="help-center-footer text-center mt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                <p><b>Curious To Learn More?</b></p>
+                <button style="background-color: black; color: white; padding: 10px; border-radius: 9px;"> Visit Help & Community Center </button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- end of help-page -->
+
 
 
 
@@ -189,6 +232,20 @@
 
         document.getElementById('closeMenu').addEventListener('click', function () {
             document.getElementById('menu').classList.add('hidden');
+        });
+
+        // js for my dropdown buttons
+        document.querySelectorAll('.help-center-qn-over').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.classList.toggle('hidden'); // enable my visibility when i toogle then change the dropdown arrow direction based on visibility
+                const arrow = item.querySelector('.dropdown-arrow');
+                if (answer.classList.contains('hidden')) {
+                    arrow.innerHTML = '&#8964;'; //change arrow direction based on user clicks
+                } else {
+                    arrow.innerHTML = '&#8963;'; //" " " " " " " " " " " " " " " " " " " " " 
+                }
+            });
         });
     </script>
 
