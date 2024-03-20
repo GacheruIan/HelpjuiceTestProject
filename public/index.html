@@ -12,75 +12,70 @@
 
 <body>
     <!-- start my home-page -->
-    <nav class="bg-white text-black px-4 sm:px-12 py-5">
-        <div class="container mx-auto flex justify-between items-center flex-wrap">
-            <img src="https://i.ibb.co/QnSXsCb/company-logo.png" alt="">
-            <a href="#" class="text-xl font-bold mt-9">Wizardshot</a>
-            <button id="hamburger" class="md:hidden block">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
+ <nav class="fixed top-0 left-0 w-full bg-white text-black px-4 sm:px-12 py-5 z-50 ">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="https://i.ibb.co/QnSXsCb/company-logo.png" alt="Company Logo" class="h-8">
+            <a href="#" class="text-xl font-bold">Wizardshot</a>
+        </div>
+        <button id="hamburger" class="md:hidden block">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <div class="hidden md:flex flex-1 justify-center space-x-4">
+            <a href="#home" class="hover:text-gray-400">Home</a>
+            <a href="#features" class="hover:text-gray-400">Features</a>
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#help" class="hover:text-gray-400">Help Center & Community</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-3">
+            <div class="text-gray-600 hover:text-gray-400 mt-4">Login</div>
+            <div class="flex flex-col items-center justify-center">
+                <div class="text-sm">100% free, forever 🤑</div>
+                <a href="#" class="py-2 px-4 bg-black text-white rounded">Install Wizardshot</a>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="menu" class="md:hidden hidden flex-col items-center self-end py-8 mt-5 space-y-6 font-bold bg-white w-full absolute top-full left-0 right-0">
+            <a href="#home" class="block w-full text-left px-4">Home</a>
+            <a href="#features" class="block w-full text-left px-4">Features</a>
+            <a href="#about" class="block w-full text-left px-4">About</a>
+            <a href="#help" class="block w-full text-left px-4">Help Center & Community</a>
+            <div class="border-t border-gray-300 w-full my-2"></div>
+            <div class="w-full text-left text-gray-600 hover:text-gray-400 px-4">Login</div>
+            <div class="border-t border-gray-300 w-full my-2"></div>
+            <div class="flex flex-col items-center justify-center w-full">
+                <a href="#" class="py-1 px-2 bg-black text-white rounded">Install Wizardshot</a>
+                <div class="text-sm text-center mt-2">100% free, forever 🤑</div>
+            </div>
+            <button id="closeMenu" class="absolute top-0 right-0 mt-5 mr-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
-            <div class="hidden md:flex flex-1 justify-center space-x-4 mt-8">
-                <a href="#home" class="hover:text-gray-400">Home</a>
-                <a href="#features" class="hover:text-gray-400">Features</a>
-                <a href="#about" class="hover:text-gray-400">About</a>
-                <a href="#help" class="hover:text-gray-400">Help Center & Community</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-3">
-                <div class="text-gray hover:text-gray-400 mt-7">Login</div>
-                <div class="flex flex-col items-center justify-center">
-                    <div class="text-sm mb-0">100% free, forever 🤑</div>
-                    <a href="#" class="py-3 px-2 bg-black text-white rounded mt-0 fa fa-chrome"> Install Wizardshot</a>
-                </div>
-            </div>
-
-            <!-- Mobile view for navbar, modified for neatness and alignment -->
-            <!-- Adjusted Mobile view for navbar, for left alignment -->
-            <div id="menu"
-                class="md:hidden hidden flex-col items-center self-end py-8 mt-5 space-y-6 font-bold bg-white w-full">
-                <!-- Adjusted for left alignment -->
-                <a href="#home" class="block w-full text-left px-4">Home</a>
-                <a href="#features" class="block w-full text-left px-4">Features</a>
-                <a href="#about" class="block w-full text-left px-4">About</a>
-                <a href="#help" class="block w-full text-left px-4">Help Center & Community</a>
-                <div class="border-t border-gray-300 w-full my-2"></div>
-                <div class="w-full text-left text-gray hover:text-gray-400 px-4">Login</div>
-                <div class="border-t border-gray-300 w-full my-2"></div>
-                <!-- Centered items remain unchanged -->
-                <div class="flex flex-col items-center justify-center w-full">
-                    <a href="#" class="py-1 px-2 bg-black text-white rounded">Install Wizardshot</a>
-                    <div class="text-sm text-center mt-2">100% free, forever 🤑</div>
-                </div>
-                <button id="closeMenu" class="absolute top-0 right-0 mt-5 mr-5">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-
         </div>
-
-        </div>
-    </nav>
+    </div>
+</nav>
     <!-- Navbar End -->
-    <div class="home-page mb-20" id="home">
-        <div class="flex flex-col items-center justify-center">
+    <div class="home-page" id="home">
+        <div class="flex flex-col items-center justify-center mb-9">
             <h1 class="text-center mb-1 px-2">Your Magic Wand for <br> Instant Documentation</h1>
             <div class="text-center mb-4 text-xs">TURN ANY PROCESS INTO A SIMPLE STEP BY STEP GUIDE</div>
             <a href="#" class="px-4 py-1 bg-black text-white rounded mb-10">Install Wizardshot &#8594; </a>
         </div>
-        <div class="home-image-container">
-            <div class="tutorial-image">
-                <img src="https://i.ibb.co/vmdRkmz/face-up-ftarrow.png" alt="face-up-ftarrow" srcset="">
+        <div class="home-image-container relative pt-14">
+            <div class="tutorial-image relative ">
+                <p class="absolute z-10" style="top: -15%; left: 25%; width: auto; margin-left: 0; "><b><i>It only takes
+                            3 clicks to <br> publish your first tutorial</i></b></p>
+                <img src="https://i.ibb.co/vmdRkmz/face-up-ftarrow.png" alt="face-up-ftarrow" class="absolute"
+                    style="width:10%; top:0%; left: 20%; z-index: 5;">
                 <img src="https://i.ibb.co/vVY3vQL/tutorialhelpjuice.png" alt="publish-tutorial"
-                    style="width:50%; margin-left: 25%; border-radius: 2%;">
+                    style="width:50%; margin-left: 25%; border-radius: 2%; top: 3%;" id="tutorial-image">
             </div>
         </div>
+
+
     </div>
     <!-- end of home page -->
 
@@ -137,23 +132,27 @@
 
     <!-- start of about page -->
     <div class="aboutus-page text-center flex justify-center items-center mx-auto " id="about">
-        <div class="about-left-container flex space-x-2 md:space-x-4 items-center bg-gradient-to-r from-green-200 via-red-200 to-blue-200 px-4 py-2">
+        <div
+            class="about-left-container flex space-x-2 md:space-x-4 items-center bg-gradient-to-r from-green-200 via-red-200 to-blue-200 px-4 py-2">
             <h1 class="text-sm md:text-base text-gray-400" id="h1-about-page-1"><u>Free</u></h1>
             <p class="text-xs md:text-sm">Free<br>Forever</p>
         </div>
-        <div class="about-middle-container flex space-x-2 md:space-x-3 items-center bg-gradient-to-r from-green-200 via-red-200 to-blue-200 px-4 py-2">
+        <div
+            class="about-middle-container flex space-x-2 md:space-x-3 items-center bg-gradient-to-r from-green-200 via-red-200 to-blue-200 px-4 py-2">
             <h1 class="text-sm md:text-base text-gray-400" id="h1-about-page-2"><u>Unlimited</u></h1>
             <p class="text-xs md:text-sm">Tutorial<br>Creation</p>
         </div>
-        <div class="about-right-container flex space-x-2 md:space-x-3 items-center bg-gradient-to-r from-green-200 via-red-200 to-blue-200 px-4 py-2">
+        <div
+            class="about-right-container flex space-x-2 md:space-x-3 items-center bg-gradient-to-r from-green-200 via-red-200 to-blue-200 px-4 py-2">
             <h1 class="text-sm md:text-base text-gray-400" id="h1-about-page-3"><u>Powerful</u></h1>
             <p class="text-xs md:text-sm">Editor&<br>Integrations</p>
         </div>
         <img src="https://i.ibb.co/MNB6HpZ/face-down-ftarrow.png" alt="face-down-ftarrow" id="face-down-ftarrow">
     </div>
-    
+
     </div>
-    <div class="about-center-container mx-auto text-center border-2 border-black rounded-lg p-4 max-w-xl md:max-w-2xl mb-20">
+    <div
+        class="about-center-container mx-auto text-center border-2 border-black rounded-lg p-4 max-w-xl md:max-w-2xl mb-20">
         <div class="about-center-container-h1 mb-4">
             <h1 id="about-center-h1" class="text-base md:text-lg lg:text-xl mb-4">Create A Detailed Tutorial <br> in
                 Less than 3 clicks</h1>
@@ -312,10 +311,16 @@
     <script>
         document.getElementById('hamburger').addEventListener('click', function () {
             document.getElementById('menu').classList.toggle('hidden');
+            // Toggle visibility between hamburger and close icons
+            document.getElementById('hamburger').classList.toggle('hidden');
+            document.getElementById('closeIcon').classList.toggle('hidden');
         });
 
         document.getElementById('closeMenu').addEventListener('click', function () {
             document.getElementById('menu').classList.add('hidden');
+            // Toggle visibility between close and hamburger icons
+            document.getElementById('hamburger').classList.toggle('hidden');
+            document.getElementById('closeIcon').classList.toggle('hidden');
         });
 
 
