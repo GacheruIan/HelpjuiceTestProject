@@ -34,3 +34,7 @@ h2{
     padding: 10px;
     display: none; /* Hidden by default */
 }
+#face-down-ftarrow{
+    margin-top: 80px;
+    height: 90px;
+}
