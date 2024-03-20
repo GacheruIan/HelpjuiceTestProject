@@ -4,59 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Helpjuice</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- start my home-page -->
- <nav class="fixed top-0 left-0 w-full bg-white text-black px-4 sm:px-12 py-5 z-50 ">
-    <div class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-            <img src="https://i.ibb.co/QnSXsCb/company-logo.png" alt="Company Logo" class="h-8">
-            <a href="#" class="text-xl font-bold">Wizardshot</a>
-        </div>
-        <button id="hamburger" class="md:hidden block">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-        <div class="hidden md:flex flex-1 justify-center space-x-4">
-            <a href="#home" class="hover:text-gray-400">Home</a>
-            <a href="#features" class="hover:text-gray-400">Features</a>
-            <a href="#about" class="hover:text-gray-400">About</a>
-            <a href="#help" class="hover:text-gray-400">Help Center & Community</a>
-        </div>
-        <div class="hidden md:flex items-center space-x-3">
-            <div class="text-gray-600 hover:text-gray-400 mt-4">Login</div>
-            <div class="flex flex-col items-center justify-center">
-                <div class="text-sm">100% free, forever 🤑</div>
-                <a href="#" class="py-2 px-4 bg-black text-white rounded">Install Wizardshot</a>
+    <nav class="fixed top-0 left-0 w-full bg-white text-black px-4 sm:px-12 py-5 z-50 ">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://i.ibb.co/QnSXsCb/company-logo.png" alt="Company Logo" class="h-8  mt-5">
+                <a href="#" class="text-xl font-bold  mt-5">Wizardshot</a>
             </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="menu" class="md:hidden hidden flex-col items-center self-end py-8 mt-5 space-y-6 font-bold bg-white w-full absolute top-full left-0 right-0">
-            <a href="#home" class="block w-full text-left px-4">Home</a>
-            <a href="#features" class="block w-full text-left px-4">Features</a>
-            <a href="#about" class="block w-full text-left px-4">About</a>
-            <a href="#help" class="block w-full text-left px-4">Help Center & Community</a>
-            <div class="border-t border-gray-300 w-full my-2"></div>
-            <div class="w-full text-left text-gray-600 hover:text-gray-400 px-4">Login</div>
-            <div class="border-t border-gray-300 w-full my-2"></div>
-            <div class="flex flex-col items-center justify-center w-full">
-                <a href="#" class="py-1 px-2 bg-black text-white rounded">Install Wizardshot</a>
-                <div class="text-sm text-center mt-2">100% free, forever 🤑</div>
-            </div>
-            <button id="closeMenu" class="absolute top-0 right-0 mt-5 mr-5">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            <button id="hamburger" class="md:hidden block">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
                 </svg>
             </button>
+            <div class="hidden md:flex flex-1 justify-center space-x-4 mt-5">
+                <a href="#home" class="hover:text-gray-400">Home</a>
+                <a href="#features" class="hover:text-gray-400">Features</a>
+                <a href="#about" class="hover:text-gray-400">About</a>
+                <a href="#help" class="hover:text-gray-400">Help Center & Community</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-3">
+                <div class="text-gray-600 hover:text-gray-400 mt-4">Login</div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="text-sm" id="nav-free-text"><b>100% free, forever 🤑</b></div>
+                    <a href="#" class="py-2 px-4 bg-black text-white rounded fa fa-chrome">Install Wizardshot</a>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="menu"
+                class="md:hidden hidden flex-col items-center self-end py-8 mt-5 space-y-6 font-bold bg-white w-full absolute top-full left-0 right-0">
+                <a href="#home" class="block w-full text-left px-4">Home</a>
+                <a href="#features" class="block w-full text-left px-4">Features</a>
+                <a href="#about" class="block w-full text-left px-4">About</a>
+                <a href="#help" class="block w-full text-left px-4">Help Center & Community</a>
+                <div class="border-t border-gray-300 w-full my-2"></div>
+                <div class="w-full text-left text-gray-600 hover:text-gray-400 px-4">Login</div>
+                <div class="border-t border-gray-300 w-full my-2"></div>
+                <div class="flex flex-col items-center justify-center w-full">
+                    <a href="#" class="py-1 px-2 bg-black text-white rounded fa fa-chrome">Install Wizardshot</a>
+                    <div class="text-sm text-center mt-2 " id="nav-free-text">100% free, forever 🤑</div>
+                </div>
+                <button id="closeMenu" class="absolute top-0 right-0 mt-5 mr-5">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <!-- Navbar End -->
     <div class="home-page" id="home">
         <div class="flex flex-col items-center justify-center mb-9">
@@ -64,14 +72,14 @@
             <div class="text-center mb-4 text-xs">TURN ANY PROCESS INTO A SIMPLE STEP BY STEP GUIDE</div>
             <a href="#" class="px-4 py-1 bg-black text-white rounded mb-10">Install Wizardshot &#8594; </a>
         </div>
-        <div class="home-image-container relative pt-14">
+        <div class="home-image-container relative pt-14 ">
             <div class="tutorial-image relative ">
-                <p class="absolute z-10" style="top: -15%; left: 25%; width: auto; margin-left: 0; "><b><i>It only takes
+                <p class="absolute z-10 " style="top: -15%; left: 25%; width: auto; margin-left: 0; "><b><i>It only takes
                             3 clicks to <br> publish your first tutorial</i></b></p>
                 <img src="https://i.ibb.co/vmdRkmz/face-up-ftarrow.png" alt="face-up-ftarrow" class="absolute"
                     style="width:10%; top:0%; left: 20%; z-index: 5;">
                 <img src="https://i.ibb.co/vVY3vQL/tutorialhelpjuice.png" alt="publish-tutorial"
-                    style="width:50%; margin-left: 25%; border-radius: 2%; top: 3%;" id="tutorial-image">
+                    style="width:50%; margin-left: 25%; border-radius: 2%; top: 3%;" id="tutorial-image" class=" border-8 border-purple-400">
             </div>
         </div>
 
@@ -81,7 +89,7 @@
 
     <!-- start of features page -->
     <div class="features text-center py-4" id="features">
-        <div class="text-2xl font-bold mb-4">Say Goodbye To Writing Docs, and Hello <br> To Wizardshot Doing it for YOU.
+        <div class="text-2xl font-bold mb-4">Say <u>Goodbye To Writing Docs,</u> and Hello <br> To Wizardshot Doing it for YOU.
         </div>
         <div class="container mx-auto px-8 py-8">
             <div class="flex flex-wrap -mx-4">
@@ -123,7 +131,7 @@
     </div>
 
     <div class="about-below text-center mb-20">
-        <div class="text-2xl font-bold">+32MOREFEATURES</div>
+        <div class="text-2xl font-bold">+32 MOREFEATURES</div>
         <div class="mx-auto my-2 h-0.5 bg-gray-200 w-1/4"></div>
         <div class="text-xl font-bold">INCLUDING A KB INTEGRATION</div>
     </div>
@@ -177,78 +185,82 @@
 
     <!-- start of help-page -->
     <div class="help-center-section mb-20" id="help">
-        <div class="help-center-heading text-center mb-10">
-            <h1 id="help-center-heading1">Common Questions</h1>
+        <div class="help-center-heading text-center mb-12"> 
+            <h1 id="help-center-heading1" class="text-2xl leading-normal mb-4">Common Questions</h1> 
         </div>
-        <div class="help-center-questions mx-auto w-full max-w-2xl">
-            <div class="help-center-question" data-question="1">
-                <p class="help-center-qn-over cursor-pointer"><b>What is Wizardshot?</b> <span
-                        class="dropdown-arrow">&#8964;</span></p>
-                <p class="help-center-answer">Wizardshot is a web app & chrome extension that allows you to create
-                    step-by-step tutorials simply by capturing your screen.
-                    <hr>
+        <div class="help-center-questions mx-auto w-full max-w-2xl px-4 lg:px-0">
+            <div class="help-center-question mb-6" data-question="1"> 
+                <p class="help-center-qn-over cursor-pointer"><b>What is Wizardshot?</b> <span class="dropdown-arrow">&#8964;</span></p>
+                <p class="help-center-answer mt-2">Wizardshot is a web app & chrome extension that allows you to create step-by-step tutorials simply by capturing your screen.
+                    <hr class="mt-4"> 
                 </p>
             </div>
-            <div class="help-center-question" data-question="2">
-                <p class="help-center-qn-over cursor-pointer"><b>How is Wizardshot Free?</b> <span
-                        class="dropdown-arrow">&#8964;</span></p>
-                <p class="help-center-answer">The costs to run a service are really inexpensive as most of the
-                    processing
-                    happens in the Chrome extension. <br> Really - all that we have to pay for is <u>super-secure
-                        hosting</u>, <u>awesome 24/7 support</u> and that’s it. <br> <b>We built Wizardshot as a
-                        stand-alone product with a deep <u>Helpjuice Knowledge Base</u> integration.</b>
-                    <hr>
+            <div class="help-center-question mb-6" data-question="2">
+                <p class="help-center-qn-over cursor-pointer"><b>How is Wizardshot Free?</b> <span class="dropdown-arrow">&#8964;</span></p>
+                <p class="help-center-answer mt-2">The costs to run a service are really inexpensive as most of the processing happens in the Chrome extension. <br> Really - all that we have to pay for is <u>super-secure hosting</u>, <u>awesome 24/7 support</u> and that’s it. <br> <b>We built Wizardshot as a stand-alone product with a deep <u>Helpjuice Knowledge Base</u> integration.</b>
+                    <hr class="mt-4">
                 </p>
             </div>
-            <div class="help-center-question" data-question="3">
-                <p class="help-center-qn-over cursor-pointer"><b>Is my data secure?</b> <span
-                        class="dropdown-arrow">&#8964;</span></p>
-                <p class="answer hidden">The costs to run a service are really inexpensive as most of the processing
-                    happens in the Chrome extension. <br> Really - all that we have to pay for is <u>super-secure
-                        hosting</u>, <u>awesome 24/7 support</u> and that’s it. <br> <b>We built Wizardshot as a
-                        stand-alone product with a deep <u>Helpjuice Knowledge Base</u> integration.</b></p>
+            <div class="help-center-question mb-6" data-question="3">
+                <p class="help-center-qn-over cursor-pointer"><b>Is my data secure?</b> <span class="dropdown-arrow">&#8964;</span></p>
+                <p class="answer hidden mt-2">Very Secure
+                    <hr class="mt-4">
+                </p>
             </div>
-
-            <div
-                class="help-center-footer text-center mt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-                <p><b>Curious To Learn More?</b></p>
-                <button style="background-color:#03132E; color: white; padding: 10px; border-radius: 9px;"> Visit Help &
-                    Community Center </button>
+    
+            <div class="help-center-footer text-center mt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 px-4 lg:px-0"> 
+                <p class="text-lg"><b>Curious To Learn More?</b></p> 
+                <button style="background-color:#03132E; color: white; padding: 12px 20px; border-radius: 9px;"> 
+                    Visit Help & Community Center 
+                </button>
             </div>
-
         </div>
     </div>
-
-    <!-- end of help-page -->
-
+    
+    <div class="text-sm justify-start flex" id="nav-free-middle" style="margin-left:auto;"><b>100% free, forever 🤑</b></div>
     <div class="bg-black text-white py-6 px-8 relative overflow-hidden max-w-4xl mx-auto rounded-tl-lg rounded-tr-lg">
-        <div class="flex justify-between items-start">
-            <div class="space-y-1">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="space-y-1 mb-4 md:mb-0">
                 <h1 class="text-xl font-bold px-0">Create Tutorials in 3 clicks</h1>
                 <p>With WizardShot, You Click Capture, And We’ll Capture What’s Happening on <br> Your Screen And Turn
                     It Into A Tutorial.</p>
             </div>
             <a href="#"
-                class="bg-gradient-to-r from-purple-500 to-green-500 text-white py-2 px-4 rounded font-bold self-start">Try
+                class="bg-gradient-to-r from-purple-500 to-green-500 text-white py-2 px-4 rounded font-bold self-start md:self-center mt-auto md:mt-0 ml-auto">Try
                 WizardShot</a>
         </div>
         <div class="absolute bottom-[-2px] left-0 w-full h-[2px] bg-white"></div>
     </div>
-    <!-- Black line below the container -->
+    
     <div class="h-[2px] bg-black max-w-3.4xl mx-auto"></div>
+    <!-- end of help-page -->
 
 
 
-
+    <!-- begin footer class -->
     <footer class="bg-white text-black">
         <div class="max-w-6xl mx-auto px-4 py-6 lg:py-8 flex flex-wrap justify-between items-start">
-            <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
+        <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
                 <h2 class="text-xl font-bold text-gray-900">Wizardshot</h2>
                 <p class="mt-2 text-sm text-gray-600">Turn complex process into a<br>simple step-by-step guide</p>
-                <div class="mt-2">
-                    <span class="text-gray-700">[Small Icon]</span>
+                <div class="mt-2 flex justify-start"> <!-- Adjusted for left alignment -->
+                    <div class="border-2 border-gray-900 text-center" style="width: 200px;"> <!-- Removed mx-auto for left alignment -->
+                        <div class="flex justify-between items-center border-b-2 border-gray-900">
+                            <div class="w-1/2 border-r-2 border-gray-900 p-2 text-xs">
+                                12 <br> years
+                            </div>
+                            <div class="w-1/2 p-2 text-xs">
+                                Built By <br> <span class="icon"><img src="https://i.ibb.co/QnSXsCb/company-logo.png" alt="company-logo" style="margin-left: 25px;margin-top: 10px;"></span> <br> HelpJuice
+                            </div>
+                        </div>
+                        <div class="p-2 text-xs">
+                            #1 Rated Knowledge Base Software
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+                
 
             <div class=" learn-main-container w-full lg:w-1/4 mb-4 lg:mb-0">
                 <h3 class="text-md font-semibold text-gray-900" id="learn-heading-main">Learn More</h3>
@@ -272,7 +284,7 @@
                 <div class="flex flex-col">
                     <div><i class="fa fa-phone" aria-hidden="true"></i> +1 (833) 387 3877</div>
                     <div class="mt-2"><i class="fa fa-envelope" aria-hidden="true"></i> success@wizardshot.com</div>
-                    <div class="flex mt-2 space-x-4">
+                    <div class="flex mt-5 space-x-4">
                         <span><i class="fab fa-tiktok"></i></span>
                         <span><i class="fab fa-instagram"></i></span>
                     </div>
@@ -288,37 +300,19 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- end of footer -->
 
 
 
     <script>
         document.getElementById('hamburger').addEventListener('click', function () {
             document.getElementById('menu').classList.toggle('hidden');
-            // Toggle visibility between hamburger and close icons
             document.getElementById('hamburger').classList.toggle('hidden');
             document.getElementById('closeIcon').classList.toggle('hidden');
         });
 
         document.getElementById('closeMenu').addEventListener('click', function () {
             document.getElementById('menu').classList.add('hidden');
-            // Toggle visibility between close and hamburger icons
             document.getElementById('hamburger').classList.toggle('hidden');
             document.getElementById('closeIcon').classList.toggle('hidden');
         });
@@ -328,12 +322,12 @@
         document.querySelectorAll('.help-center-qn-over').forEach(item => {
             item.addEventListener('click', () => {
                 const answer = item.nextElementSibling;
-                answer.classList.toggle('hidden'); // enable my visibility when i toogle then change the dropdown arrow direction based on visibility
+                answer.classList.toggle('hidden');
                 const arrow = item.querySelector('.dropdown-arrow');
                 if (answer.classList.contains('hidden')) {
                     arrow.innerHTML = '&#8964;'; //change arrow direction based on user clicks
                 } else {
-                    arrow.innerHTML = '&#8963;'; //" " " " " " " " " " " " " " " " " " " " " 
+                    arrow.innerHTML = '&#8963;'; //" " " " " " " " azin same" " " " " " " " " " " " " 
                 }
             });
         });
