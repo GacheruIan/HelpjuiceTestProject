@@ -16,3 +16,21 @@ h2{
 .about-center-container{
     border: 4px solid;
 }
+.help-center-section {
+    text-align: center;
+}
+.help-center-qn-over{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.help-center-answer {
+    text-align: left;
+    padding: 10px;
+}
+.answer {
+    text-align: left;
+    padding: 10px;
+    display: none; /* Hidden by default */
+}
