@@ -42,10 +42,7 @@ Copyright (c) [2024] [GacheruIan]
      Ian Gacheru - https://github.com/GacheruIan.
 
   
-## Live Page Link.
-
-Frontend link:
-Backend API:
+## Live Page Link. helpjuice-test-project.vercel.app
 
 Copyright (c) 2024 GacheruIan
 
