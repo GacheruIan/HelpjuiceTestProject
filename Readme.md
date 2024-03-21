@@ -23,6 +23,7 @@ Test Project Documentation for Helpjuice test project.
     1. JavaScript - Is used to build the reactivity of the page and functionality.
     2. Tailwind-CSS - Is used to style the pages.
     3. Figma-UI design.
+    4. Devops - githooks(for better commits), git-api
 
 
 
