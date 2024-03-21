@@ -1150,7 +1150,6 @@ h2{
   width: fit-content;
   margin: auto;
   padding: 20px;
-  /* Adjust based on how far out you want the lines to start */
   background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
   border-radius: 2%;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
